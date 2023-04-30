@@ -73,6 +73,9 @@
     max-height: 100vh;
     background: #3d0438;
     color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .docs__header {
