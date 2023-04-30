@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripio | Docs</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="shortcut icon" href="src/images/trip-plane.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<body class="page-container">
+    
+    <section class="navigator">
+        <header class="navigator__header">
+            <img src="src/images/tripio-logo.svg" alt="Tripio" class="navigator__image">
+            <p class="version">V1</p>
+        </header>
+        <div class="divider"></div>
+        <nav class="navigator__nav">
+            <ul class="navigator__list">
+                <li class="navigator__item">
+                    <a href="#gettingStarted"class="navigator__link">Getting Started</a>
+                    <ul class="navigator__sub-list">
+                        <li class="navigator__sub-item">
+                            <a href="#productIntroduction" class="navigator__sub-link">Introduction to the product</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#productRequirements" class="navigator__sub-link">System requirements</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#productInstallation" class="navigator__sub-link">Installation instructions</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#productConfiguration" class="navigator__sub-link">Initial configuration steps</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#productAccountSetup" class="navigator__sub-link">Account setup guide</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#productNextSteps" class="navigator__sub-link">Next Steps</a>
+                        </li>
+                    </ul> 
+                </li>
+                <div class="divider"></div>
+                <li class="navigator__item">
+                    <a href="#userGuide" class="navigator__link">User Guides</a>
+                    <ul class="navigator__sub-list">
+                        <li class="navigator__sub-item">
+                            <a href="#userInterfaceOverview" class="navigator__sub-link">User interface overview</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#userHowToUse" class="navigator__sub-link">How to use the product</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#userTipsAndTricks" class="navigator__sub-link">Tips and tricks for effective use</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#userAcountManagment" class="navigator__sub-link">Account management instructions</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#userWorkflow" class="navigator__sub-link">Workflow examples</a>
+                        </li> 
+                        <li class="navigator__sub-item">
+                            <a href="#userNextSteps" class="navigator__sub-link">Next Steps</a>
+                        </li>
+                    </ul>
+                </li>
+                <div class="divider"></div>
+                <li class="navigator__item">
+                    <a href="#apiDocumentation" class="navigator__link">API Documentation</a>
+                    <ul class="navigator__sub-list">
+                        <li class="navigator__sub-item">
+                            <a href="#apiReferenceGuide" class="navigator__sub-link">API reference guide</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#apiAuthentication" class="navigator__sub-link">Authentication and authorization instructions</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#apiSampleRequestResponse" class="navigator__sub-link">Sample API requests and responses</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#apiCodeSnippets" class="navigator__sub-link">Code snippets in multiple languages</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#apiChangeLog" class="navigator__sub-link">API change log</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#apiNextSteps" class="navigator__sub-link">Next Steps</a>
+                        </li>
+                    </ul>
+                </li>
+                <div class="divider"></div>
+                <li class="navigator__item">
+                    <a href="#troubleshooting" class="navigator__link">Troubleshooting</a>
+                    <ul class="navigator__sub-list">
+                        <li class="navigator__sub-item">
+                            <a href="#troubleshootCommon" class="navigator__sub-link">Common issues and their solutions</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#troubleshootErrorCodes" class="navigator__sub-link">Error codes and their meanings</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#troubleshootLogFile" class="navigator__sub-link">Log file analysis instructions</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#troubleshootFaqs" class="navigator__sub-link">FAQs on troubleshooting</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#troubleshootContactInfo" class="navigator__sub-link">Contact information for support</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#troubleshootNextSteps" class="navigator__sub-link">Next Steps</a>
+                        </li>
+                    </ul>
+                </li>
+                <div class="divider"></div>
+                <li class="navigator__item">
+                    <a href="#bestPractices" class="navigator__link">Best Practices</a>
+                    <ul class="navigator__sub-list">
+                        <li class="navigator__sub-item">
+                            <a href="#bpSecurity" class="navigator__sub-link">Security best practices</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#bpPerformance" class="navigator__sub-link">Performance optimization tips</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#bpScalability" class="navigator__sub-link">Scalability guidelines</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#bpAccessibility" class="navigator__sub-link">Accessibility recommendations</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#bpUserExperience" class="navigator__sub-link">User experience (UX) best practices</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#bpNextSteps" class="navigator__sub-link">Next Steps</a>
+                        </li>
+                    </ul>
+                </li>
+                <div class="divider"></div>
+                <li class="navigator__item">
+                    <a href="#legalInformation" class="navigator__link">Legal Information</a>
+                    <ul class="navigator__sub-list">
+                        <li class="navigator__sub-item">
+                            <a href="#legalTerms" class="navigator__sub-link">Terms of service</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#legalPrivacy" class="navigator__sub-link">Privacy policy</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#legalDataRetention" class="navigator__sub-link">Data retention policy</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#legalCopyright" class="navigator__sub-link">Copyright and ownership information</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#legalGdpr" class="navigator__sub-link">GDPR compliance statement</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#legalNextSteps" class="navigator__sub-link">Next Steps</a>
+                        </li>
+                    </ul>
+                </li>
+                <div class="divider"></div>
+                <li class="navigator__item">
+                    <a href="#releaseNotes" class="navigator__link">Release Notes</a>
+                    <ul class="navigator__sub-list">
+                        <li class="navigator__sub-item">
+                            <a href="#releaseFeatures" class="navigator__sub-link">List of new features</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#releaseBugFix" class="navigator__sub-link">List of bug fixes</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#releasePerformance" class="navigator__sub-link">List of performance improvements</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#releaseKnownIssues" class="navigator__sub-link">List of known issues</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#releaseCompatibility" class="navigator__sub-link">Compatibility with previous versions</a>
+                        </li>
+                        <li class="navigator__sub-item">
+                            <a href="#releaseNextSteps" class="navigator__sub-link">Next Steps</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="divider"></div>
+        <footer class="footer">
+            <p class="footer__text">Tripio 2023 © All rights reserved</p>
+            <div class="social-media">
+                <a href="#" class="social-media__link">
+                    <img alt="Facebook" class="social-media__image" src="src/images/social-media/facebook.svg">        
+                </a>
+                <a href="#" class="social-media__link">
+                    <img alt="Instagram" class="social-media__image" src="src/images/social-media/instagram.svg">
+                </a>
+                <a href="#" class="social-media__link">
+                    <img alt="Tiktok" class="social-media__image" src="src/images/social-media/tiktok.svg">
+                </a>
+                <a href="#" class="social-media__link">
+                    <img alt="Twitter" class="social-media__image" src="src/images/social-media/twitter.svg">
+                </a>
+                <a href="#" class="social-media__link">
+                    <img alt="Youtube" class="social-media__image" src="src/images/social-media/youtube.svg">
+                </a>
+            </div>
+        </footer>
+    </section>
+
+    <section class="docs">
+        <span id="gettingStarted">
+            <header class="docs__header">
+                <div class="docs__information">
+                    <h1 class="docs__title">Getting Started</h1>
+                </div>
+                <div class="docs__post-information">
+                    <p class="version">V1</p>
+                    <p class="last-updated">Last updated in 10 apr. 2023 - 10:43am</p>
+                </div>
+            </header>
+            <section class="docs__content">
+                <section id="productIntroduction" class="docs__content__header">
+                    <h2 class="docs__subtitle">Introduction to the product</h2>
+                    <p class="docs__text">Welcome to Tripio! This guide will help you get started with our product/service, from
+                        installing it to
+                        configuring it to your liking.</p>
+                </section>
+                <section id="productRequirements" class="docs__content__section">
+                    <h3 class="docs__content__title">System Requirements</h3>
+                    <p class="docs__text">Before installing Tripio, make sure your system meets the following requirements:</p>
+                    <ul class="docs__list">
+                        <li class="docs__item">Operating System: Windows, Linux and MacOS</li>
+                        <li class="docs__item">RAM: 4GB</li>
+                        <li class="docs__item">Disk Space: 1GB</li>
+                    </ul>
+                </section>
+            
+                <section id="productInstallation" class="docs__content__section">
+                    <h3 class="docs__content__title">Installation</h3>
+                    <p class="docs__text">To install Tripio, follow these steps:</p>
+                    <ol class="docs__list">
+                        <li class="docs__item">Download the installation package from <a href="#" class="docs__link">[Insert
+                                Download Link]</a>.</li>
+                        <li class="docs__item">Double-click the installation package to start the installation process.</li>
+                        <li class="docs__item">Follow the on-screen instructions to complete the installation.</li>
+                    </ol>
+                </section>
+            
+                <section id="productConfiguration" class="docs__content__section">
+                    <h3 class="docs__content__title">Initial Configuration</h3>
+                    <p class="docs__text">After installing Tripio, you will need to configure it to your liking. Follow these steps
+                        to get
+                        started:</p>
+                    <ol class="docs__list">
+                        <li class="docs__item">Launch Tripio.</li>
+                        <li class="docs__item">Follow the on-screen instructions to configure the basic settings.</li>
+                        <li class="docs__item">Explore the different menus and options to customize the product/service to your
+                            liking.</li>
+                    </ol>
+                </section>
+            
+                <section id="productAccountSetup" class="docs__content__section">
+                    <h3 class="docs__content__title">Account Setup</h3>
+                    <p class="docs__text">To access all the features of Tripio, you will need to create an account. Follow these
+                        steps to create
+                        an account:</p>
+                    <ol class="docs__list">
+                        <li class="docs__item">Click on the "Create Account" button on the login screen.</li>
+                        <li class="docs__item">Follow the on-screen instructions to create your account.</li>
+                        <li class="docs__item">Once your account is created, you can log in and access all the features of Tripio.
+                        </li>
+                    </ol>
+                </section>
+            
+                <section id="productNextSteps" class="docs__content__section">
+                    <h3 class="docs__content__title">Next Steps</h3>
+                    <p class="docs__text">Congratulations! You have successfully installed and configured Tripio. Here are some next
+                        steps to help
+                        you get started:</p>
+                    <ol class="docs__list">
+                        <li class="docs__item">Read the User Guide to learn more about how to use Tripio.</li>
+                        <li class="docs__item">Explore the different menus and options to customize Tripio to your liking.</li>
+                        <li class="docs__item">Contact our support team if you have any questions or issues.</li>
+                    </ol>
+                </section>
+            </section>
+        </span>
+        <span id="userGuide">
+            <header class="docs__header">
+                <div class="docs__information">
+                    <h1 class="docs__title">User Guide</h1>
+                </div>
+                <div class="docs__post-information">
+                    <p class="version">V1</p>
+                    <p class="last-updated">Last updated in 10 apr. 2023 - 10:43am</p>
+                </div>
+            </header>
+            <section class="docs__content">
+                <section id="userIntroduction" class="docs__content__header">
+                    <p class="docs__text">Welcome to the user guide for [Product/Service Name]. This guide will provide you with step-by-step instructions on how
+                    to use all the features of our product/service.</p>
+                </section>
+                <section id="userInterfaceOverview" class="docs__content__section">
+                    <h3 class="docs__content__title">User Interface Overview</h3>
+                    <p class="docs__text">The user interface consists of the following elements:</p>
+                    <ol class="docs__list">
+                        <li class="docs__item">Main Menu: The main menu contains all the different sections of the product/service.</li>
+                        <li class="docs__item">Toolbar: The toolbar contains the most commonly used actions.</li>
+                        <li class="docs__item">Workspace: The workspace is where you perform actions and view the results.</li>
+                        <li class="docs__item">Status Bar: The status bar displays information about the current state of the product/service.</li>
+                    </ol>
+                </section>
+        
+                <section id="userHowToUse" class="docs__content__section">
+                    <h3 class="docs__content__title">How to Use [Product/Service Name]</h3>
+                    <p class="docs__text">To use [Product/Service Name], follow these steps:</p>
+                    <ol class="docs__list">
+                        <li class="docs__item">Launch [Product/Service Name].</li>
+                        <li class="docs__item">Select the desired section from the main menu.</li>
+                        <li class="docs__item">Use the toolbar to perform the desired action.</li>
+                        <li class="docs__item">View the results in the workspace.</li>
+                        <li class="docs__item">Save or export the results as necessary.</li>
+                    </ol>
+                </section>
+        
+                <section id="userTipsAndTricks" class="docs__content__section">
+                    <h3 class="docs__content__title">Tips and Tricks</h3>
+                    <p class="docs__text">Here are some tips and tricks to help you use [Product/Service Name] more effectively:</p>
+                    <ul class="docs__list">
+                        <li class="docs__item">Use the keyboard shortcuts to perform actions more quickly.</li>
+                        <li class="docs__item">Take advantage of the context menus to perform actions more efficiently.</li>
+                        <li class="docs__item">Use the search function to quickly find the desired feature or option.</li>
+                        <li class="docs__item">Customize the user interface to suit your needs and preferences.</li>
+                    </ul>
+                </section>
+        
+                <section id="userAcountManagment" class="docs__content__section">
+                    <h3 class="docs__content__title">Account Management</h3>
+                    <p class="docs__text">To manage your account in [Product/Service Name], follow these steps:</p>
+                    <ol class="docs__list">
+                        <li class="docs__item">Click on the "Account" section in the main menu.</li>
+                        <li class="docs__item">Follow the on-screen instructions to manage your account details, such as username, password, and email address.</li>
+                        <li class="docs__item">Save the changes as necessary.</li>
+                    </ol>
+                </section>
+        
+                <section id="userWorkflow" class="docs__content__section">
+                    <h3 class="docs__content__title">Workflow Examples</h3>
+                    <p class="docs__text">Here are some examples of workflows that you can perform with [Product/Service Name]:</p>
+                    <ol class="docs__list">
+                        <li class="docs__item">[Insert Workflow Example 1]</li>
+                        <li class="docs__item">[Insert Workflow Example 2]</li>
+                        <li class="docs__item">[Insert Workflow Example 3]</li>
+                    </ol>
+                </section>
+
+                <section id="userNextSteps" class="docs__content__section">
+                    <h3 class="docs__content__title">Next Steps</h3>
+                    <p class="docs__text">Congratulations! You have learned how to use [Product/Service Name]. Here are some next steps to help you get the most
+                    out of our product/service:</p>
+                    <ol class="docs__list">
+                        <li class="docs__item">Experiment with the different features and options to discover new possibilities.</li>
+                        <li class="docs__item">Check out our tutorials and how-to guides for more advanced workflows.</li>
+                        <li class="docs__item">Contact our support team if you have any questions or issues.</li>
+                    </ol>
+                </section>
+            </section>
+        </span>
+        <footer class="footer">
+            <p class="footer__text">Tripio 2023 © All rights reserved</p>
+            <div class="social-media">
+                <a href="#" class="social-media__link">
+                    <img alt="Facebook" class="social-media__image" src="src/images/social-media/facebook.svg">
+                </a>
+                <a href="#" class="social-media__link">
+                    <img alt="Instagram" class="social-media__image" src="src/images/social-media/instagram.svg">
+                </a>
+                <a href="#" class="social-media__link">
+                    <img alt="Tiktok" class="social-media__image" src="src/images/social-media/tiktok.svg">
+                </a>
+                <a href="#" class="social-media__link">
+                    <img alt="Twitter" class="social-media__image" src="src/images/social-media/twitter.svg">
+                </a>
+                <a href="#" class="social-media__link">
+                    <img alt="Youtube" class="social-media__image" src="src/images/social-media/youtube.svg">
+                </a>
+            </div>
+        </footer>
+    </section>
+
+</body>
+</html>
