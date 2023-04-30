@@ -71,8 +71,8 @@
     padding: 2rem;
     overflow-y: auto;
     max-height: 100vh;
-    background: white;
-    color: #260323;
+    background: #3d0438;
+    color: white;
 }
 
 .docs__header {
@@ -129,23 +129,18 @@
 }
 
 .docs .version {
-    color: #260323;
+    color: white;
     font-weight: 400;
 }
 
 .docs .last-updated {
-    color: #260323;
+    color: white;
     font-weight: 400;
 }
 
 .docs .footer .footer__text {
-    color: #260323;
+    color: white;
 }
-
-.docs .footer .social-media .social-media__image {
-    filter: invert(25%) sepia(98%) saturate(6256%) hue-rotate(335deg) brightness(43%) contrast(100%);
-}
-
 
 /* General Components */
 
